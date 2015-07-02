@@ -22,7 +22,7 @@ app.secret_key = "ABC"
 
 app.jinja_env.undefined = StrictUndefined
 
-@app.route('/'), methods=['POST'])
+@app.route('/', methods=['POST'])
 def index():
 	"""Homepage."""	
 	secrets_account = secrets_account()
